@@ -18,6 +18,8 @@
     displayHeight="720" shadow="autoUpdate: true; enabled: true; type:pcf" light="defaultLightsEnabled: false">
 
     <a-assets>
+      <img id="testImage" src="Test.png">
+      
       <!-- Cahun -->
       <img id="cardCahun" src="assets/Cahun/CardEmpty.png">
       <img id="portraitCahun" src="assets/Cahun/CahunPortrait.png">
@@ -25,20 +27,28 @@
       <img id="TxtCahun" src="assets/Cahun/texte.png">
 
       <!-- Coccinelle -->
-      <img id="Coc1" src="assets/Coccinelle/1 STR FG.png">
-      <img id="Coc2" src="assets/Coccinelle/2 FG.png">
-      <img id="Coc3" src="assets/Coccinelle/3 STR BG.png">
-      <img id="Coc4" src="assets/Coccinelle/4 TXT.png">
-      <img id="Coc5" src="assets/Coccinelle/5 BG.png">
+      <img id="LCoc1" src="assets/Coccinelle/L1-FG-Strokes.png">
+      <img id="LCoc2" src="assets/Coccinelle/L2-Image.png">
+      <img id="LCoc3" src="assets/Coccinelle/L-Texte.png">
+      <img id="LCoc4" src="assets/Coccinelle/L-BG-Fond.png">
+      
+      <img id="RCoc1" src="assets/Coccinelle/R1-FG-Strokes.png">
+        <img id="RCoc2" src="assets/Coccinelle/R2-Images.png">
+        <img id="RCoc3" src="assets/Coccinelle/R-Texte.png">
+        <img id="RCoc4" src="assets/Coccinelle/R-BG-Fond.png">
       
       <!-- Violette -->
       <img id="Vm1" src="assets/Violette/Vm1.png">
       <img id="Vm2" src="assets/Violette/Vm2.png">
       <img id="Vm3" src="assets/Violette/Vm3.png">
       <img id="Vm4" src="assets/Violette/Vm4.png">
+
+      <!-- Demo Video -->
+      <video id="Demo" src="Demo.mp4" autoplay loop></video>
     </a-assets>
 
 
+     <!-- Cahun -->
     <a-marker preset="custom" type=' pattern' url='assets/Cahun/pattern-Cahun.patt' size="0.08">
       <a-image src="#cardCahun" position='0 0 0' rotation='270 0 0' scale='2 3 1' material="opacity: 1"'></a-image>
       <a-image src="#portraitCahun" position=' 0 .07 -1' rotation='270 0 0' scale='2 1 1' material="opacity: 1"'></a-image>
@@ -47,26 +57,49 @@
       </a-marker>
 
 
+     <!-- Coccinelle -->
       <a-marker preset="custom" type=' pattern' url='assets/Coccinelle/pattern-Coccinelle.patt' size="0.08">
 
-        <a-image src="#Coc5" position='0 .05 0' rotation='270 0 0' scale='2 1 1' material="opacity: 1"'></a-image>
-      <a-image src="#Coc4" position=' 0 .07 0' rotation='270 0 0' scale='2 1 1' material="opacity: 1"'></a-image>
-      <a-image src="#Coc3" position=' 0 .1 0' rotation='270 0 0' scale='2 1 1' material="opacity: 1"'></a-image>
-      <a-image src="#Coc2" position=' 0 .15 0' rotation='270 0 0' scale='2 1 1' material="opacity: 1"'></a-image>
-        <a-image src="#Coc1" position=' 0 .16 0' rotation='270 0 0' scale='2 1 1' material="opacity: 1"'></a-image>
-
+      <!-- <a-image src="#testImage" position='0 1 0' rotation='0 -90 -270' material="opacity: 1" scale='2 2 2 '></a-image> -->
+       <a-image src="#LCoc4" position=' 0 1 0' rotation='0 -90 -270' scale='2 3 1 material="opacity: 1"'></a-image>
+      <a-image src="#LCoc3" position='-0.02 1 0' rotation='0 -90 -270'  scale='2 3 1 material="opacity: 1"'></a-image>
+      <a-image src="#LCoc2" position=' -.04 1 0' rotation='0 -90 -270'  scale='2 3 1 material="opacity: 1"'></a-image>
+        <a-image src="#LCoc1" position='-0.05 1 0' rotation='0 -90 -270'  scale='2 3 1' material="opacity: 1"'></a-image>
+        
+         <a-image src="#RCoc4" position=' .03 1 0' rotation='0 -270 270' scale='2 3 1 material="opacity: 1"'></a-image> 
+        <a-image src="#RCoc3" position='0.05 1 0' rotation='0 -270 270'  scale='2 3 1 material="opacity: 1"'></a-image>
+        <a-image src="#RCoc2" position=' .07 1 0' rotation='0 -270 270'  scale='2 3 1 material="opacity: 1"'></a-image> 
+          <a-image src="#RCoc1" position='0.08 1 0' rotation='0 -270 270'  scale='2 3 1' material="opacity: 1"'></a-image>
     </a-marker>
 
+
+     <!-- Violette -->
     <a-marker preset="custom" type=' pattern' url='assets/Violette/pattern-Violette.patt' size="0.08">
 
-      <a-image src="#Vm4" position=' 0 .07 0' rotation='270 0 0' scale='1.5 3 1' material="opacity: 1"'></a-image>
-      <a-image src="#Vm3" position=' 0 .1 0' rotation='270 0 0' scale='1.5 3 1' material="opacity: 1"'></a-image>
-      <a-image src="#Vm2" position=' 0 .15 0' rotation='270 0 0' scale='1.5 3 1' material="opacity: 1"'></a-image>
-        <a-image src="#Vm1" position=' 0 .16 0' rotation='270 0 0' scale='1.5 3 1' material="opacity: 1"'></a-image>
+      <!-- Demo Video 
+       <a-video src="#Demo" position='0 1 0' rotation='0 -90 -270' scale='2 2 2' width='4' height='3'></a-video>
+       Demo Video -->
 
+      <!-- G besoin de tester donc je mets ça entre parenthèses mais c'est ça le vrai Violette Morris
+      <a-image src="#Vm4" position=' 0 .07 0' rotation='270 0 0' scale='1.5 3 1' material="opacity: 1"'></a-image>
+      <a-image src="#Vm3" position=' 0 .1 0' rotation='270 0 0' scale='2 3 1' material="opacity: 1"'></a-image>
+      <a-image src="#Vm2" position=' 0 .15 0' rotation='270 0 0' scale='2 3 1' material="opacity: 1"'></a-image>
+        <a-image src="#Vm1" position=' 0 .16 0' rotation='270 0 0' scale='2 3 1' material="opacity: 1"'></a-image>
+      -->
+
+      
+      <!-- Test cursor -->
+      <a-image src="#testImage" position=' 0 .15 0' rotation='270 0 0' scale='2 3 1' material="opacity: 1" animation__scaleup="property: scale; startEvents: fusing; easing: easeInOutBack; dur: 500; from: 1 1 1; to: 1.1 1.1 1.1"
+        animation__scaledown="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500;from: 1.1 1.1 1.1; to: 1 1 1"></a-image>
+      
     </a-marker>
     
-    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+    <a-camera position="0 0 0" look-controls="enabled: false">
+      <a-entity cursor="fuse: true; fuseTimeout: 1500" position="0 0 -1"
+        geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
+        material="color: white; opacity:0.5; shader: flat">
+      </a-entity>
+    </a-camera>
 
   </a-scene>
 </body>
